@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#21130d">
+  <meta name="description" content="Discover coffee, creamy lattes, and refreshing fruit sodas at KoppiKubo Coffee in Mauban, Quezon.">
+
+  <title>KoppiKubo Coffee | Mas Masarap Kapag May KAPEling Ka</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <audio id="backgroundMusic" loop>
+    <source src="assets/koppikubo_music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicButton" class="music-button" type="button">
+    ♫ CLICK HERE TO PLAY MUSIC
+</button>
+
+<!---FLOATING FIRE FLIES-->
+
+<div class="fireflies">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+</div>
+
+  <header class="site-header">
+    <a href="#home" class="brand" data-go="home">
+      <img src="assets/KoppikuboLogo.jpg"
+      alt="KoppiKubo Coffee Logo"
+      class="brand-logo">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="nav-link active" data-go="home">Home</a>
+      <a href="#about" class="nav-link" data-go="about">About Us</a>
+      <a href="#products" class="nav-link" data-go="products">Products</a>
+      <a href="#order" class="nav-link" data-go="order">Order & Payment</a>
+      <a href="#contact" class="nav-link" data-go="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME PAGE -->
+    <section class="page active" id="home">
+
+      <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content reveal">
+          <p class="eyebrow">WELCOME TO KOPPIKUBO COFFEE</p>
+
+          <h1>Good Coffee.<br><span>Good Moments.</span></h1>
+
+          <p class="hero-description">
+            Take a break, enjoy your favorite drink, and make every moment
+            a little more special.
+          </p>
+
+          <p class="hero-motto">Mas masarap kapag may KAPEling ka.</p>
+
+          <button class="primary-button" type="button" data-go="products">
+            Explore Our Menu
+          </button>
+        </div>
+
+        <div class="hero-bottom">
+          <span>MAUBAN, QUEZON</span>
+          <span>EST. 2024</span>
+        </div>
+      </section>
+
+      <section class="section featured-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">OUR SELECTION</p>
+          <h2>Featured <span>Drinks</span></h2>
+          <p>Discover some of the drinks you can enjoy at KoppiKubo.</p>
+        </div>
+
+        <div class="slider-wrapper reveal">
+          <button class="slider-arrow" id="homePrev"
+            type="button" aria-label="Previous products">&#10094;</button>
+
+          <div class="featured-window">
+            <div class="featured-track" id="featuredTrack"></div>
+          </div>
+
+          <button class="slider-arrow" id="homeNext"
+            type="button" aria-label="Next products">&#10095;</button>
+        </div>
+
+        <div class="slider-dots" id="homeDots"></div>
+
+        <div class="center-button">
+          <button class="outline-button" type="button" data-go="products">
+            View Full Menu
+          </button>
+        </div>
+      </section>
+
+      <section class="home-about">
+        <div class="home-about-image reveal">
+          <img src="Koppikubo.jpg" alt="KoppiKubo Coffee shop">
+        </div>
+
+        <div class="home-about-content reveal">
+          <p class="eyebrow">A PLACE TO UNWIND</p>
+          <h2>Your Little Coffee <span>Corner</span></h2>
+          <p>
+            KoppiKubo Coffee is a cozy place where you can relax, enjoy
+            refreshing drinks, and create good memories with the people
+            who matter.
+          </p>
+          <button class="text-button" type="button" data-go="about">
+            Discover Our Story →
+          </button>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section class="page" id="about">
+      <section class="page-banner">
+        <p class="eyebrow">GET TO KNOW US</p>
+        <h1>About <span>KoppiKubo</span></h1>
+        <p>Our story, our passion, and our love for good coffee.</p>
+      </section>
+
+      <section class="section about-layout">
+        <div class="about-image reveal">
+          <img src="backback.jpg" alt="KoppiKubo Coffee">
+        </div>
+
+        <div class="about-text reveal">
+          <p class="eyebrow">OUR STORY</p>
+          <h2>More Than Just a Cup of <span>Coffee</span></h2>
+
+          <p>
+            Established in 2024 in Brgy. Liwayway, Mauban, Quezon,
+            KoppiKubo Coffee began with a simple idea: to serve enjoyable
+            drinks and provide a comfortable place where people can relax
+            and connect.
+          </p>
+
+          <p>
+            From coffee favorites to refreshing fruit sodas, we continue
+            to bring people together through good drinks and meaningful
+            moments.
+          </p>
+
+          <p class="about-motto">Mas masarap kapag may KAPEling ka.</p>
+        </div>
+      </section>
+
+      <section class="section values-section">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT WE VALUE</p>
+          <h2>Our <span>Purpose</span></h2>
+        </div>
+
+        <div class="values-grid">
+          <article class="value-card reveal">
+            <h3>Quality</h3>
+            <p>We aim to serve enjoyable drinks made for every coffee moment.</p>
+          </article>
+
+          <article class="value-card reveal">
+            <h3>Comfort</h3>
+            <p>We want every customer to feel welcome and relaxed.</p>
+          </article>
+
+          <article class="value-card reveal">
+            <h3>Connection</h3>
+            <p>We believe good drinks are even better when shared with others.</p>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- PRODUCTS PAGE -->
+    <section class="page" id="products">
+      <section class="page-banner">
+        <p class="eyebrow">MADE FOR YOUR MOMENTS</p>
+        <h1>Our <span>Menu</span></h1>
+        <p>Find your next favorite drink at KoppiKubo Coffee.</p>
+      </section>
+
+      <section class="section products-section">
+        <div class="product-tools">
+          <div class="search-box">
+            <input type="search" id="productSearch"
+              placeholder="Search for a drink..." aria-label="Search products">
+          </div>
+
+          <div class="filter-buttons" id="filterButtons">
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="coffee">Coffee</button>
+            <button class="filter-btn" type="button" data-filter="noncoffee">Non-Coffee</button>
+            <button class="filter-btn" type="button" data-filter="soda">Fruit Soda</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <p class="no-results" id="noResults" hidden>
+          No drinks found. Try another search.
+        </p>
+      </section>
+    </section>
+
+    <!-- ORDER PAGE -->
+    <section class="page" id="order">
+      <section class="page-banner">
+        <p class="eyebrow">YOUR FAVORITES, YOUR WAY</p>
+        <h1>Order & <span>Payment</span></h1>
+        <p>Select your drinks and review your order before submitting.</p>
+      </section>
+
+      <section class="section order-section">
+        <div class="order-layout">
+
+          <div class="cart-panel">
+            <div class="panel-heading">
+              <h2>Your Cart</h2>
+              <span id="cartCount">0 items</span>
+            </div>
+
+            <div class="cart-items" id="cartItems">
+              <p class="empty-message">Your cart is empty.</p>
+            </div>
+
+            <button class="clear-button" id="clearCart" type="button">
+              Clear Cart
+            </button>
+
+            <div class="cart-summary">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="subtotal">₱0.00</span>
+              </div>
+
+              <div class="summary-row">
+                <span>Discount (10% at ₱300)</span>
+                <span id="discount">-₱0.00</span>
+              </div>
+
+              <div class="summary-row total-row">
+                <span>Total</span>
+                <span id="total">₱0.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-panel">
+            <div class="panel-heading">
+              <h2>Customer Details</h2>
+            </div>
+
+            
+            <form id="orderForm">
+
+  <label for="customerName">Customer Name</label>
+  <input
+    type="text"
+    id="customerName"
+    name="customerName"
+    placeholder="Enter your name"
+    minlength="2"
+    required
+  >
+
+  <label for="paymentMethod">Payment Method</label>
+  <select id="paymentMethod" name="paymentMethod" required>
+    <option value="">Select payment method</option>
+    <option value="Cash">Cash</option>
+    <option value="GCash">GCash</option>
+    <option value="Pay at Counter">Pay at Counter</option>
+  </select>
+
+  <!-- CASH PAYMENT -->
+ <div id="cashPayment">
+  <label for="amountPaid">Cash Amount (₱)</label>
+
+  <input
+    type="number"
+    id="amountPaid"
+    name="amountPaid"
+    placeholder="Enter cash amount"
+    min="0"
+    step="0.01"
+  >
+
+  <p id="changePreview" class="payment-note">
+    Your change will appear here.
+  </p>
+</div>
+
+  <!-- GCASH PAYMENT -->
+  <div id="gcashPayment" hidden>
+    <h3>Pay through GCash</h3>
+
+    <p>Scan our GCash QR code to pay.</p>
+
+    <div class="gcash-qr">
+      <img
+        src="assets/gcash-qr.png"
+        alt="KoppiKubo GCash QR Code"
+      >
+    </div>
+
+    <p class="payment-note">
+      Please verify the recipient and payment amount before sending.
+    </p>
+  </div>
+
+  <label for="specialRequest">Special Request</label>
+  <textarea
+    id="specialRequest"
+    name="specialRequest"
+    rows="4"
+    placeholder="Optional request..."
+  ></textarea>
+
+  <p class="payment-note">
+    Note: This website is a demonstration system.
+    Online payment is not automatically verified.
+  </p>
+
+  <button class="primary-button submit-button" type="submit">
+    Place Order
+  </button>
+
+</form>
+          </div>
+
+        </div>
+
+        <div class="receipt" id="receipt" aria-live="polite"></div>
+      </section>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section class="page" id="contact">
+      <section class="page-banner">
+        <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+        <h1>Contact <span>Us</span></h1>
+        <p>Connect with KoppiKubo Coffee.</p>
+      </section>
+
+<div id="productsGrid" class="products-grid"></div>
+
+      <section class="section contact-section">
+        <div class="contact-card reveal">
+          <p class="eyebrow">VISIT US</p>
+          <h2>Find Your Way to <span>KoppiKubo</span></h2>
+          <p>School Site, Brgy. Liwayway, Mauban, Quezon</p>
+        </div>
+
+        <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=School%20Site%2C%20Brgy.%20Liwayway%2C%20Mauban%2C%20Quezon&output=embed"
+          width="100%"
+          height="350"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+        <div class="contact-card reveal">
+          <p class="eyebrow">STAY CONNECTED</p>
+          <h2>Let's Keep in <span>Touch</span></h2>
+          <p>Follow our Facebook page for updates and announcements.</p>
+          <a class="primary-button contact-link"
+            href="https://www.facebook.com/profile.php?id=61557154383881" target="_blank"
+            rel="noopener noreferrer">Visit Facebook</a>
+        </div>
+      </section>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <a href="#home" class="footer-brand" data-go="home">KoppiKubo Coffee</a>
+    <p>Mas masarap kapag may KAPEling ka.</p>
+    <p class="copyright">© 2024 KoppiKubo Coffee. All rights reserved.</p>
+  </footer>
+
+  <button class="back-top" id="backTop" type="button"
+    aria-label="Back to top">↑</button>
+
+</body>
+</html>
